@@ -66,13 +66,5 @@ async def to_code(config):
     cg.add_library("SPI", None)
 
     cg.add_define("USE_BSEC")
-    cg.add_library(
-        "BME68x Sensor library",
-        "1.1.40406",
-        "https://github.com/BoschSensortec/Bosch-BME68x-Library.git",
-    )
-    cg.add_library(
-        "BSEC2 Software Library",
-        "1.1.2061",
-        "https://github.com/BoschSensortec/Bosch-BSEC2-Library.git",
-    )
+    cg.add_library("https://github.com/BoschSensortec/Bosch-BME68x-Library.git#v1.1.40407")
+    cg.add_library("https://github.com/BoschSensortec/Bosch-BSEC2-Library.gitv1.4.2200")
